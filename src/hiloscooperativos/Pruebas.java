@@ -24,6 +24,7 @@ public class Pruebas {
             int fin = (i == numPartes - 1) ? temperaturas.length : (i + 1) * tamanoParte;
             arrayHilos[i] = new HiloTemperatura(temperaturas, inicio, fin);
             arrayHilos[i].start();
+           
         }
 
         // Esperar a que todos los hilos terminen
@@ -45,6 +46,8 @@ public class Pruebas {
         // Imprimir la temperatura máxima global
         System.out.println("Temperatura máxima de los últimos 10 años = " + temperaturaMaximaGlobal);
     }
+    
+    
 
     // Método para llenar el array con temperaturas aleatorias
     private static void llenarArrayConTemperaturas(int[] array, int min, int max) {

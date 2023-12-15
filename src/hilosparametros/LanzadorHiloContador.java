@@ -11,7 +11,7 @@ public class LanzadorHiloContador {
 		//Los lanzamos
 		for(int i=0; i<5; i++) {
 			arrayHilos[i]= new HiloContador("Hilo " + i);
-			arrayHilos[i].setLimite(10);
+			arrayHilos[i].setLimite(2);
 			Thread hilo = new Thread(arrayHilos[i]);
 			//Cada hilo tendrá un nombre
 			hilo.start();
